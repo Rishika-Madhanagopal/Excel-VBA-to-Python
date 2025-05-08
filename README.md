@@ -1,5 +1,3 @@
-# Excel-VBA-to-Python
-Transformed Excel VBA workflows into Python scripts using Pandas to automate data processing
 # Calibration Summary Extraction from Fluorescence Data
 
 ## Project Overview
@@ -29,3 +27,35 @@ You can install the required dependencies using pip:
 
 ```bash
 pip install pandas openpyxl
+
+## Input Data
+The script expects an Excel file (data.xlsx) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: Green, CY5, and CY7.
+
+The data in each sheet should follow the structure where:
+
+- The channels (Green, CY5, CY7) are represented as columns.
+
+- Each row corresponds to a specific well, and the statistics (e.g., Median, Mean, etc.) are provided in one of the rows.
+Running the Script
+Place your Excel file (data.xlsx) in the same directory as the Python script.
+
+## Run the Python script:
+
+'''bash
+python extract_calibration_summary.py
+The script will process each sheet in the Excel file, extract the relevant statistics, and save the summary to a new Excel file (calibration_summary_final.xlsx).
+
+## Output
+The script generates a new Excel file (calibration_summary_final.xlsx) containing the summarized data, excluding rows related to "Calibration range summary."
+
+## Example Output
+The output file contains the following columns:
+
+Well: The well name from each sheet.
+
+Statistics for each channel (e.g., green_median, green_mean, cy5_mean, cy7_std_dev, etc.).
+
+## Notes:
+The script handles the case where no fluorescence channels are found in a sheet and skips processing for those sheets.
+
+The column names in the input data should be standardized, and the script will automatically rename columns containing fluorescence data to "Green," "CY5," and "CY7."
