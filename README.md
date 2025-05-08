@@ -25,10 +25,8 @@ You need to have Python installed on your machine. You can download and install 
 
 You can install the required dependencies using pip:
 
-```bash
-pip install pandas openpyxl
-
-----
+   ```bash
+   pip install pandas openpyxl
 
 ## Input Data
 The script expects an Excel file (`data.xlsx`) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: **Green**, **CY5**, and **CY7**.
@@ -43,4 +41,3 @@ The data in each sheet should follow this structure:
 
    ```bash
    python extract_calibration_summary.py
-
