@@ -12,6 +12,7 @@ The data in each sheet should follow this structure:
 
    ```bash
    python extract_calibration_summary.py
+3. The script will process each sheet in the Excel file, extract the relevant statistics, and save the summary to a new Excel file (calibration_summary_final.xlsx).   
 
 ## Project Overview
 This project is designed to extract and summarize calibration data from fluorescence measurements stored in an Excel file. The script processes the Excel file containing data for multiple wells, extracting statistical values (e.g., Median, Mean, Standard Deviation) for three fluorescence channels: Green, CY5, and CY7. The extracted data is then cleaned, processed, and compiled into a final summary file.
