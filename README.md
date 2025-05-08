@@ -28,7 +28,11 @@ You can install the required dependencies using pip:
 ```bash
 pip install pandas openpyxl
 
+
 # Fluorescence Calibration Summary Extraction Script
+
+## Overview
+This Python script processes fluorescence measurement data from an Excel file, extracts relevant statistics from each sheet, and generates a summarized report. The report includes statistics for each channel (Green, CY5, and CY7) and is saved to a new Excel file.
 
 ## Input Data
 The script expects an Excel file (`data.xlsx`) with multiple sheets. Each sheet should contain data for fluorescence measurements with the following structure:
