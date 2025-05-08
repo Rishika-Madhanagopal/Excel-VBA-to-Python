@@ -27,38 +27,3 @@ You can install the required dependencies using pip:
 
 ```bash
 pip install pandas openpyxl
-
-
-# Fluorescence Calibration Summary Extraction Script
-
-## Overview
-This Python script processes fluorescence measurement data from an Excel file, extracts relevant statistics from each sheet, and generates a summarized report. The report includes statistics for each channel (Green, CY5, and CY7) and is saved to a new Excel file.
-
-## Input Data
-The script expects an Excel file (`data.xlsx`) with multiple sheets. Each sheet should contain data for fluorescence measurements with the following structure:
-
-- **Channels**: Green, CY5, and CY7 are represented as columns.
-- **Rows**: Each row corresponds to a specific well.
-- **Statistics**: The rows should contain various statistics (e.g., Median, Mean, etc.) related to each channel.
-
-### Expected Columns:
-- Green
-- CY5
-- CY7
-
-### Example Structure:
-
-| Well | Green | CY5  | CY7  |
-|------|-------|------|------|
-| A1   | 100   | 200  | 300  |
-| A2   | 110   | 210  | 310  |
-| ...  | ...   | ...  | ...  |
-
-## Running the Script
-
-1. Place your Excel file (`data.xlsx`) in the same directory as the Python script.
-   
-2. To run the script, execute the following command in the terminal:
-
-   ```bash
-   python extract_calibration_summary.py
