@@ -30,13 +30,11 @@ pip install pandas openpyxl
 
 ## Input Data
 The script expects an Excel file (data.xlsx) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: Green, CY5, and CY7.
-
 The data in each sheet should follow the structure where:
-
 - The channels (Green, CY5, CY7) are represented as columns.
-
 - Each row corresponds to a specific well, and the statistics (e.g., Median, Mean, etc.) are provided in one of the rows.
-Running the Script
+
+## Running the script
 Place your Excel file (data.xlsx) in the same directory as the Python script.
 
 ## Run the Python script:
