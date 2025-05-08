@@ -1,4 +1,17 @@
 # Calibration Summary Extraction from Fluorescence Data
+## Input Data
+The script expects an Excel file (`data.xlsx`) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: **Green**, **CY5**, and **CY7**.
+
+The data in each sheet should follow this structure:
+- The channels (**Green**, **CY5**, **CY7**) are represented as columns.
+- Each row corresponds to a specific well, and the statistics (e.g., Median, Mean, etc.) are provided in one of the rows.
+
+## Running the Script
+1. Place your Excel file (`data.xlsx`) in the same directory as the Python script.
+2. Run the Python script:
+
+   ```bash
+   python extract_calibration_summary.py
 
 ## Project Overview
 This project is designed to extract and summarize calibration data from fluorescence measurements stored in an Excel file. The script processes the Excel file containing data for multiple wells, extracting statistical values (e.g., Median, Mean, Standard Deviation) for three fluorescence channels: Green, CY5, and CY7. The extracted data is then cleaned, processed, and compiled into a final summary file.
@@ -25,19 +38,6 @@ You need to have Python installed on your machine. You can download and install 
 
 You can install the required dependencies using pip:
 
-   ```bash
-   pip install pandas openpyxl
+```bash
+pip install pandas openpyxl
 
-## Input Data
-The script expects an Excel file (`data.xlsx`) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: **Green**, **CY5**, and **CY7**.
-
-The data in each sheet should follow this structure:
-- The channels (**Green**, **CY5**, **CY7**) are represented as columns.
-- Each row corresponds to a specific well, and the statistics (e.g., Median, Mean, etc.) are provided in one of the rows.
-
-## Running the Script
-1. Place your Excel file (`data.xlsx`) in the same directory as the Python script.
-2. Run the Python script:
-
-   ```bash
-   python extract_calibration_summary.py
