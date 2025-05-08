@@ -27,3 +27,15 @@ You can install the required dependencies using pip:
 
 ```bash
 pip install pandas openpyxl
+
+
+### Running the Script
+
+Once you've installed the necessary libraries, and placed the script in your project directory, follow these steps to execute the script:
+
+1. Place your **Excel file** (`data.xlsx`) containing the fluorescence data in the same directory as the Python script.
+   
+2. Open your **command line terminal** and navigate to the directory where your Python script is located. For example:
+
+   ```bash
+   cd path/to/your/project
