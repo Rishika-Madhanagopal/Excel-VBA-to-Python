@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Load the Excel file
-input_excel = r"C:\Users\rishi\OneDrive\Desktop\Aeirtec_Freelance\Excel project\CALIBRATION RAW DATA table for R260335.xlsx"
+input_excel = "data.xlsx"
 xls = pd.ExcelFile(input_excel)
 
 # Define channels and statistics
