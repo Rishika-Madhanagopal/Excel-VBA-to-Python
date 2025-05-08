@@ -28,7 +28,7 @@ You can install the required dependencies using pip:
 ```bash
 pip install pandas openpyxl
 
-Input Data
+## Input Data
 The script expects an Excel file (data.xlsx) with multiple sheets. Each sheet should contain data for fluorescence measurements and should include columns corresponding to the channels: Green, CY5, and CY7.
 The data in each sheet should follow the structure where:
 - The channels (Green, CY5, CY7) are represented as columns.
